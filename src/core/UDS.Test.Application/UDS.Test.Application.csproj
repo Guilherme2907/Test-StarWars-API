@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UDS.Test.Domain\UDS.Test.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
