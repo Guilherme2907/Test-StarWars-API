@@ -1,0 +1,6 @@
+@UDS.Test.Api_HostAddress = http://localhost:5149
+
+GET {{UDS.Test.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

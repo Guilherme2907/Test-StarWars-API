@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5CD00DA-839C-4628-A46E-109DF66ADEE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{66F6A9E6-9CCD-4468-9259-1AB43D9BD669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{AC6388E5-D910-45AD-9CFF-00CE40C647B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{B0DB8540-5369-4470-9F36-BE9991E2D665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDS.Test.Application", "src\core\UDS.Test.Application\UDS.Test.Application.csproj", "{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDS.Test.Api", "src\presentation\UDS.Test.Api\UDS.Test.Api.csproj", "{02BD6E64-7458-4187-8655-AA4297B6C5BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BD6E64-7458-4187-8655-AA4297B6C5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BD6E64-7458-4187-8655-AA4297B6C5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BD6E64-7458-4187-8655-AA4297B6C5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BD6E64-7458-4187-8655-AA4297B6C5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66F6A9E6-9CCD-4468-9259-1AB43D9BD669} = {F5CD00DA-839C-4628-A46E-109DF66ADEE2}
+		{AC6388E5-D910-45AD-9CFF-00CE40C647B3} = {F5CD00DA-839C-4628-A46E-109DF66ADEE2}
+		{B0DB8540-5369-4470-9F36-BE9991E2D665} = {F5CD00DA-839C-4628-A46E-109DF66ADEE2}
+		{36E4F67A-6C33-4F1C-B3EC-B8AF127F6A58} = {B0DB8540-5369-4470-9F36-BE9991E2D665}
+		{02BD6E64-7458-4187-8655-AA4297B6C5BB} = {66F6A9E6-9CCD-4468-9259-1AB43D9BD669}
+	EndGlobalSection
+EndGlobal
