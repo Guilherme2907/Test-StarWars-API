@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using UDS.Test.Repositories.Converters;
 
 namespace UDS.Test.Repositories.Responses;
 
@@ -14,13 +15,14 @@ public record CharacterResponse
 
     public string Gender { get; set; }
 
-    public string Homeworld { get; set; }
+    [JsonConverter(typeof(SingleOrArrayConverter))]
+    public IList<string> Homeworld { get; set; } = [];
 
     public Uri Wiki { get; set; }
 
     public Uri Image { get; set; }
 
-    public long Born { get; set; }
+    public string Born { get; set; }
 
     public string BornLocation { get; set; }
 
@@ -30,5 +32,6 @@ public record CharacterResponse
 
     public IList<string> Affiliations { get; set; }
 
-    public IList<string> Masters { get; set; }
+    [JsonConverter(typeof(SingleOrArrayConverter))]
+    public IList<string> Masters { get; set; } = [];
 }

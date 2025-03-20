@@ -1,6 +1,8 @@
-﻿namespace UDS.Test.Domain.Models;
+﻿using UDS.Test.Domain.Models;
 
-public class Character
+namespace UDS.Test.Application.Dtos;
+
+public class CharacterDto
 {
     public long Id { get; set; }
 
@@ -34,29 +36,14 @@ public class Character
 
     public IList<string> FormerAffiliations { get; set; }
 
-    public Character(
-        long id,
-        string name,
-        double height,
-        long mass,
-        string gender,
-        IList<string> homeworld,
-        Uri wiki,
-        Uri image,
-        string born,
-        string bornLocation,
-        long died,
-        string diedLocation,
-        IList<string> affiliations,
-        IList<string> masters
-    )
+    public CharacterDto(long id, string name, double height, long mass, string gender, IList<string> homeWorld, Uri wiki, Uri image, string born, string bornLocation, long died, string diedLocation, IList<string> affiliations, IList<string> masters)
     {
         Id = id;
         Name = name;
         Height = height;
         Mass = mass;
         Gender = gender;
-        HomeWorld = homeworld;
+        HomeWorld = homeWorld;
         Wiki = wiki;
         Image = image;
         Born = born;
@@ -65,5 +52,26 @@ public class Character
         DiedLocation = diedLocation;
         Affiliations = affiliations;
         Masters = masters;
+    }
+
+    public static CharacterDto FromCharacter(Character character)
+    {
+        return new
+        (
+            character.Id,
+            character.Name,
+            character.Height,
+            character.Mass,
+            character.Gender,
+            character.HomeWorld,
+            character.Wiki,
+            character.Image,
+            character.Born,
+            character.BornLocation,
+            character.Died,
+            character.DiedLocation,
+            character.Affiliations,
+            character.Masters
+        );
     }
 }
